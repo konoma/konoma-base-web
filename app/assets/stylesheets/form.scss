@@ -20,8 +20,8 @@
 		//noinspection SassScssResolvedByNameOnly
 		@include font-settings($font-color, $font-family, $input-field-font-weight, $input-field-font-size);
 
-		text-rendering: optimizeLegibility !important;
-		-webkit-font-smoothing: antialiased !important;
+		//noinspection SassScssResolvedByNameOnly
+		@include font-rendering();
 
 		width: 100%;
 		padding: 15px 20px;
@@ -117,11 +117,11 @@
 		//noinspection SassScssResolvedByNameOnly
 		@include font-settings($font-color, $font-family, $input-field-font-weight, $input-field-font-size);
 
+		//noinspection SassScssResolvedByNameOnly
+		@include font-rendering();
+
 		-webkit-appearance: none;
 		-moz-appearance: none;
-
-		text-rendering: optimizeLegibility !important;
-		-webkit-font-smoothing: antialiased !important;
 
 		&:focus {
 			background-color: $input-field-focus-background-color;

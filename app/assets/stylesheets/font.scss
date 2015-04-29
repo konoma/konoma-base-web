@@ -4,3 +4,9 @@
 	font-weight: $font-weight;
 	font-size: $font-size;
 }
+
+@mixin font-rendering() {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
