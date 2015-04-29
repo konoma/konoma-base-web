@@ -8,3 +8,5 @@ module Konoma
 		end
 	end
 end
+
+require 'konoma/base/web/form_builder' if defined?(Rails)
