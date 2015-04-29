@@ -1,4 +1,4 @@
-@mixin form-components($font-color, $font-family, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $checkbox-checked-url, $checkbox-unchecked-url, $drop-down-url) {
+@mixin form-components($font-color, $font-family, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $checkbox-checked-url, $checkbox-unchecked-url, $drop-down-url) {
 	label {
 		display: block;
 
@@ -8,11 +8,11 @@
 
 		color: $font-color;
 		font-weight: $label-font-weight;
+	}
 
-		.label--checkbox {
-			display: flex;
-			align-items: center;
-		}
+	.label--checkbox {
+		display: flex;
+		align-items: center;
 	}
 
 	input,
@@ -49,6 +49,30 @@
 
 			transition: border-color .2s linear, background-color .2s linear;
 		}
+	}
+
+	::-webkit-input-placeholder { /* WebKit browsers */
+		color:    $input-field-placeholder-font-color;
+		font-weight: $input-field-placeholder-font-weight;
+	}
+
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		opacity:  1;
+
+		color:    $input-field-placeholder-font-color;
+		font-weight: $input-field-placeholder-font-weight;
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+		opacity:  1;
+
+		color:    $input-field-placeholder-font-color;
+		font-weight: $input-field-placeholder-font-weight;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+		color:    $input-field-placeholder-font-color;
+		font-weight: $input-field-placeholder-font-weight;
 	}
 
 	input[type=checkbox] {
@@ -112,6 +136,10 @@
 		&::-ms-expand {
 			display: none;
 		}
+	}
+
+	.select__no-value {
+		color: $input-field-placeholder-font-color;
 	}
 
 	.form__group {
