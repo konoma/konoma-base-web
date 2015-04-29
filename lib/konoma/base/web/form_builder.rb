@@ -19,6 +19,13 @@ module Konoma
 						end
 					end
 				end
+
+				def datetime_select(method, options = {}, html_options = {})
+					options.merge!({datetime_separator: '<div class="group__datetime--separator">&mdash;</div>', time_separator: '<div class="group__time--separator">:</div>'})
+					content_tag(:div, class: 'group__datetime') do
+						super(method, options, html_options)
+					end
+				end
 			end
 		end
 	end

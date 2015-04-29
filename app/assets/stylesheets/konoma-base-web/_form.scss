@@ -182,5 +182,28 @@
 			color: $input-field-error-border-color;
 		}
 	}
+
+	.group__datetime {
+		display: flex;
+		align-items: center;
+	}
+
+	.group__datetime--separator {
+		flex: 1 0 auto;
+
+		margin-left: 15px;
+		margin-right: 15px;
+
+		font-weight: 700;
+	}
+
+	.group__time--separator {
+		flex: 1 0 auto;
+
+		margin-left: 5px;
+		margin-right: 5px;
+
+		font-weight: 700;
+	}
 }
 
