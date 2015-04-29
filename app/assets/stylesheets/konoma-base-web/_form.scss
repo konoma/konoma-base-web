@@ -50,27 +50,31 @@
 		}
 	}
 
-	::-webkit-input-placeholder { /* WebKit browsers */
-		color:    $input-field-placeholder-font-color;
+	::-webkit-input-placeholder {
+		/* WebKit browsers */
+		color: $input-field-placeholder-font-color;
 		font-weight: $input-field-placeholder-font-weight;
 	}
 
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-		opacity:  1;
+	:-moz-placeholder {
+		/* Mozilla Firefox 4 to 18 */
+		opacity: 1;
 
-		color:    $input-field-placeholder-font-color;
+		color: $input-field-placeholder-font-color;
 		font-weight: $input-field-placeholder-font-weight;
 	}
 
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-		opacity:  1;
+	::-moz-placeholder {
+		/* Mozilla Firefox 19+ */
+		opacity: 1;
 
-		color:    $input-field-placeholder-font-color;
+		color: $input-field-placeholder-font-color;
 		font-weight: $input-field-placeholder-font-weight;
 	}
 
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-		color:    $input-field-placeholder-font-color;
+	:-ms-input-placeholder {
+		/* Internet Explorer 10+ */
+		color: $input-field-placeholder-font-color;
 		font-weight: $input-field-placeholder-font-weight;
 	}
 
@@ -87,6 +91,18 @@
 		&:checked {
 			background: $checkbox-checked-url no-repeat;
 			background-size: 30px 30px;
+		}
+	}
+
+	.group__checkbox {
+		display: flex;
+		align-items: center;
+
+		margin-bottom: 15px;
+
+		label {
+			margin-top: 2px;
+			margin-bottom: 0;
 		}
 	}
 
