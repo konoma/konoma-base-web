@@ -1,4 +1,6 @@
-@mixin form-components($font-color, $font-family, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $checkbox-checked-url, $checkbox-unchecked-url, $drop-down-url) {
+@import 'font';
+
+@mixin form-components($font-color, $font-family, $label-font-color, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $checkbox-checked-url, $checkbox-unchecked-url, $drop-down-url) {
 	label {
 		display: block;
 
@@ -6,7 +8,7 @@
 
 		line-height: 1;
 
-		color: $font-color;
+		color: $label-font-color;
 		font-weight: $label-font-weight;
 	}
 
@@ -17,10 +19,7 @@
 
 	input,
 	textarea {
-		//noinspection SassScssResolvedByNameOnly
 		@include font-settings($font-color, $font-family, $input-field-font-weight, $input-field-font-size);
-
-		//noinspection SassScssResolvedByNameOnly
 		@include font-rendering();
 
 		width: 100%;
@@ -109,15 +108,12 @@
 		width: 100% !important;
 		padding: 15px 77px 15px 20px;
 
-		background: $input-field-focus-background-color $drop-down-url no-repeat right center;
+		background: $input-field-background-color $drop-down-url no-repeat right center;
 		background-size: 57px 57px;
 
 		border: 2px solid $input-field-border-color;
 
-		//noinspection SassScssResolvedByNameOnly
 		@include font-settings($font-color, $font-family, $input-field-font-weight, $input-field-font-size);
-
-		//noinspection SassScssResolvedByNameOnly
 		@include font-rendering();
 
 		-webkit-appearance: none;
