@@ -3,7 +3,10 @@ require 'konoma/base/web/version'
 module Konoma
 	module Base
 		module Web
-			# Your code goes here...
+			class Engine < Rails::Engine
+			end
 		end
 	end
 end
+
+require 'konoma/base/web/form_builder' if defined?(Rails)
