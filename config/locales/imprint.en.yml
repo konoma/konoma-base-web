@@ -1,0 +1,55 @@
+de:
+  imprint:
+    title: '<h1>Imprint</h1>'
+    text: '
+      <address>
+          konoma GmbH<br/>
+          Erlenweg 2<br/>
+          5400 Baden<br/>
+          Switzerland
+      </address>
+
+      <section>
+          <p>
+              konoma GmbH is represented by Thierry Rietsch (CEO).<br>
+              Email: <a href="mailto:info@konoma.ch">info@konoma.ch</a><br>
+              Phone: <a href="tel:+41797161624">+41 79 716 16 24</a>
+          </p>
+      </section>
+
+      <section>
+          <p>
+              Company number (Swiss commercial register): CHE-388.148.399<br>
+              VAT identification number (Swiss Federal Tax Administration): CHE-388.148.399 MWST
+          </p>
+      </section>
+
+      <section>
+          <h2>Liability for contents.</h2>
+          <p>The author accepts no liability with regard to the correctness, accuracy, being up-to-date, reliability or completeness of the contents of this information.</p>
+          <p>Liability claims against the author for tangible or intangible damage that arises from access to or the use or non-use of the published information, from misuse of the connection or from technical faults shall be excluded. The author is responsible for their own content on the pages of this website in accordance with the general legislation. However, as a service provider, they are under no obligation to monitor any third-party information that is transmitted or stored on this website, nor are they under any obligation to search for circumstances that suggest illegal activity is taking place. Obligations to remove or block the use of information in accordance with the general legislation shall remain unaffected by this. However, any liability in this respect shall only be undertaken from the moment that knowledge of the specific breach of law is obtained. As soon as we become aware of any legal violations, we shall remove this content immediately.</p>
+      </section>
+
+      <section>
+          <h2>Liability for links.</h2>
+          <p>References and links to third-party websites are outside of our area of responsibility. No liability of any kind shall be assumed for websites of this kind. Users access and use such websites at their own risk. The contents of any linked pages were checked at the time the link was created to ensure that there were no legal violations. Any illegal content was not evident at the time the link was created. We cannot reasonably be expected to exercise permanent control over the content of the linked sites without any specific indications of legal violations. As soon as we become aware of any legal violations, we will delete the relevant links immediately.</p>
+      </section>
+
+      <section>
+          <h2>Copyrights.</h2>
+          <p>The content and works that were created by the website operator on the pages of this website are subject to copyright protection. The reproduction, editing, distribution and any type of use beyond what is permitted under copyright requires the written consent of the relevant author or creator. Downloads and copies of this website are only permitted for private use, and not for commercial use. Where the contents of this website were not created by the website operator, third-party copyrights shall be observed. In particular, third-party content shall be marked as such. If the user notices a copyright infringement despite these clauses, the author requests that you inform them of this. As soon as we become aware of any legal violations, we will delete the content immediately.</p>
+      </section>
+
+      <section>
+          <h2>Data protection.</h2>
+          <p>On the basis of Article 13 of the Swiss Federal Constitution and the federal provisions regarding data protection rights (Data Protection Act, DSG), every person has the right to privacy and protection against misuse of their personal data. These provisions shall be complied with. Personal data shall be handled in strict confidence and shall not be sold or passed on to third parties.</p>
+          <p>In close collaboration with the hosting providers, we make every effort to protect the databases as much as possible against third-party access, losses, misuse and falsification.</p>
+          <p>When you access our website pages, the following data is stored in log files: IP address, date, time, browser request and general information that has been transferred to the operating system or browser. This usage data forms the basis for statistical, anonymous evaluations that help us to detect trends, using which we can improve our range of products accordingly.</p>
+          <p>We hereby expressly prohibit the use by third parties of the contact data published within the scope of our statutory legal notice for the purpose of sending us advertising or information material that we have not explicitly requested. The operator of the pages expressly reserves the right to take legal action in the event that they are sent unsolicited advertising information, for example in the form of spam e-mails.</p>
+      </section>
+
+      <section>
+          <h2>Privacy statement for the use of Google Analytics.</h2>
+          <p>This website uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses "cookies", which are text files stored on your computer to help the website analyse how visitors use the site. The information generated by the cookie about your use of this website will usually be transmitted to and stored by Google on servers in the United States. Within the member states of the European Union or in other states that are party to this contract within the European Economic Area, where the IP anonymisation is activated on this website, your IP address will be abbreviated by Google beforehand. In exceptional cases only, the full IP address will be transferred to a Google server in the USA and abbreviated there. On behalf of the website operator, Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators and providing other services relating to website activity and internet usage. The IP address that is transferred as part of Google Analytics shall not be associated with any other data from Google. You may refuse the storage of cookies by selecting the appropriate settings on your browser. However, please note that if you do this, you may not be able to use all of the functions on this website. Furthermore, you can prevent the collection by Google of the data that is created by the cookie and that relates to your use of the website (incl. your IP address) and the processing of this data by Google by downloading and installing the browser plug-in that is available under the following link: <a href="http://tools.google.com/dlpage/gaoptout?hl=en" target="_blank">Google Analytics Opt-out Browser Add-on</a>.</p>
+      </section>
+    '
