@@ -1,0 +1,24 @@
+@mixin flash-messages($border-radius, $success-background-color, $success-font-color, $error-background-color, $error-font-color) {
+	.flash__message {
+		padding: 20px 25px;
+		margin-bottom: 35px;
+
+		border-radius: $border-radius;
+
+		line-height: 1;
+	}
+
+	.flash__message--success {
+		background: rgba($success-background-color, .7);
+		border: 1px solid $success-background-color;
+
+		color: $success-font-color;
+	}
+
+	.flash__message--error {
+		background: rgba($error-background-color, .7);
+		border: 1px solid $error-background-color;
+
+		color: $error-font-color;
+	}
+}
