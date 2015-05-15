@@ -1,27 +1,29 @@
-@font-face {
-	font-family: 'MuseoSans';
-	font-weight: 700;
-	src: font_url('museo_sans/2D26A8_0_0.eot');
-	src: font_url('museo_sans/2D26A8_0_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_0_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_0_0.woff') format('woff'), font_url('museo_sans/2D26A8_0_0.ttf') format('truetype');
-}
+@mixin museo-sans-font() {
+	@font-face {
+		font-family: 'MuseoSans';
+		font-weight: 700;
+		src: font_url('museo_sans/2D26A8_0_0.eot');
+		src: font_url('museo_sans/2D26A8_0_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_0_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_0_0.woff') format('woff'), font_url('museo_sans/2D26A8_0_0.ttf') format('truetype');
+	}
 
-@font-face {
-	font-family: 'MuseoSans';
-	font-weight: 500;
-	src: font_url('museo_sans/2D26A8_2_0.eot');
-	src: font_url('museo_sans/2D26A8_2_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_2_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_2_0.woff') format('woff'), font_url('museo_sans/2D26A8_2_0.ttf') format('truetype');
-}
+	@font-face {
+		font-family: 'MuseoSans';
+		font-weight: 500;
+		src: font_url('museo_sans/2D26A8_2_0.eot');
+		src: font_url('museo_sans/2D26A8_2_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_2_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_2_0.woff') format('woff'), font_url('museo_sans/2D26A8_2_0.ttf') format('truetype');
+	}
 
-@font-face {
-	font-family: 'MuseoSans';
-	font-weight: 300;
-	src: font_url('museo_sans/2D26A8_1_0.eot');
-	src: font_url('museo_sans/2D26A8_1_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_1_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_1_0.woff') format('woff'), font_url('museo_sans/2D26A8_1_0.ttf') format('truetype');
-}
+	@font-face {
+		font-family: 'MuseoSans';
+		font-weight: 300;
+		src: font_url('museo_sans/2D26A8_1_0.eot');
+		src: font_url('museo_sans/2D26A8_1_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_1_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_1_0.woff') format('woff'), font_url('museo_sans/2D26A8_1_0.ttf') format('truetype');
+	}
 
-@font-face {
-	font-family: 'MuseoSans';
-	font-weight: 100;
-	src: font_url('museo_sans/2D26A8_3_0.eot');
-	src: font_url('museo_sans/2D26A8_3_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_3_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_3_0.woff') format('woff'), font_url('museo_sans/2D26A8_3_0.ttf') format('truetype');
+	@font-face {
+		font-family: 'MuseoSans';
+		font-weight: 100;
+		src: font_url('museo_sans/2D26A8_3_0.eot');
+		src: font_url('museo_sans/2D26A8_3_0.eot?#iefix') format('embedded-opentype'), font_url('museo_sans/2D26A8_3_0.woff2') format('woff2'), font_url('museo_sans/2D26A8_3_0.woff') format('woff'), font_url('museo_sans/2D26A8_3_0.ttf') format('truetype');
+	}
 }
