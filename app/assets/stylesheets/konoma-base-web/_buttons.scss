@@ -6,12 +6,12 @@
 
 	cursor: pointer;
 
-	background-color: $background-color;
+	background-color: $background-color !important;
 
-	border: 0;
+	border: 0 !important;
 	border-radius: $border-radius;
 
-	color: $font-color;
+	color: $font-color !important;
 	font-weight: $default-font-weight;
 	line-height: $default-line-height;
 
