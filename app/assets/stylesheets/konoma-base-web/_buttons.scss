@@ -1,0 +1,38 @@
+@mixin button-settings($background-color, $font-color, $default-font-weight, $default-line-height, $border-radius: 25px, $min-width: 150px) {
+	display: inline-block;
+
+	min-width: $min-width;
+	padding: 12px 45px 9px;
+
+	cursor: pointer;
+
+	background-color: $background-color;
+
+	border: 0;
+	border-radius: $border-radius;
+
+	color: $font-color;
+	font-weight: $default-font-weight;
+	line-height: $default-line-height;
+
+	outline: none !important;
+
+	user-select: none;
+}
+
+@mixin disabled-button-settings($disabled-background-color, $disabled-font-color) {
+	background-color: $disabled-background-color;
+	color: $disabled-font-color;
+}
+
+@mixin button($background-color, $disabled-background-color, $font-color, $disabled-font-color, $default-font-weight, $default-line-height, $border-radius: 25px, $min-width: 150px) {
+	.button,
+	input.button:focus {
+		@include button-settings($background-color, $font-color, $default-font-weight, $default-line-height, $border-radius, $min-width);
+	}
+
+	.button--disabled {
+		@include disabled-button-settings($disabled-background-color, $disabled-font-color);
+	}
+}
+
