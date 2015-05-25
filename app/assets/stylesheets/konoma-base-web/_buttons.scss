@@ -6,12 +6,12 @@
 
 	cursor: pointer;
 
-	background-color: $background-color !important;
+	background-color: $background-color;
 
-	border: 0 !important;
+	border: 0;
 	border-radius: $border-radius;
 
-	color: $font-color !important;
+	color: $font-color;
 	font-weight: $default-font-weight;
 	line-height: $default-line-height;
 
@@ -27,9 +27,16 @@
 }
 
 @mixin button($background-color, $disabled-background-color, $font-color, $disabled-font-color, $default-font-weight, $default-line-height, $border-radius: 25px, $min-width: 150px) {
-	.button,
-	input.button:focus {
+	.button {
 		@include button-settings($background-color, $font-color, $default-font-weight, $default-line-height, $border-radius, $min-width);
+	}
+
+	input[type=submit].button:focus {
+		background-color: $background-color !important;
+
+		border: 0 !important;
+
+		color: $font-color !important;
 	}
 
 	.button--disabled {
