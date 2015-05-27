@@ -96,6 +96,10 @@
 			background: $checkbox-checked-url no-repeat;
 			background-size: 30px 30px;
 		}
+
+		&:focus {
+			border: 0 !important;
+		}
 	}
 
 	.group__checkbox {
