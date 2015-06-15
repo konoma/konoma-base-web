@@ -22,8 +22,13 @@ Or install it yourself as:
 
 ### Form Components
 
-To use the form components, one must use the form mixins, which are available within the _form.scss. Each mixin takes an amount of parameters, which are self describing, based
-on the parameter name.
+To use the form components, one must include the mixins, which are available within the _form.scss. The form-components mixin takes three special parameters:
+
+| Parameter | Description |
+| --------- | ----------- |
+| $checkbox-checked-url | An image for a checked checkbox. Size: 60px x 60px |
+| $checkbox-unchecked-url | An image for an unchecked checkbox. Size: 60px x 60px |
+| $drop-down-url | An image for the select button. Size: 114px x 114px |
 
 After including the form-components mixin, one must use the following HTML/CSS structure:
 
