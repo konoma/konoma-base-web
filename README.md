@@ -26,9 +26,9 @@ To use the form components, one must include the mixins, which are available wit
 
 | Parameter | Description |
 | --------- | ----------- |
-| $checkbox-checked-url | An image for a checked checkbox. Size: 60px x 60px |
-| $checkbox-unchecked-url | An image for an unchecked checkbox. Size: 60px x 60px |
-| $drop-down-url | An image for the select button. Size: 114px x 114px |
+| $checkbox-checked-url | An image for a checked checkbox. Size: 60px / 60px. |
+| $checkbox-unchecked-url | An image for an unchecked checkbox. Size: 60px / 60px. |
+| $drop-down-url | An image for the select button. Size: 114px / 114px. |
 
 After including the form-components mixin, one must use the following HTML/CSS structure:
 
