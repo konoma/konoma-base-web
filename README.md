@@ -46,7 +46,9 @@ After including the form-components mixin, one must use the following HTML/CSS s
 
     <!-- Use the following construct for checkboxes -->
     <div class="form__group">
-        <label class="label--checkbox" for="bar"><input type="checkbox" name="bar" value="" checked="checked"> Foo Bar.</label>
+        <label class="label--checkbox" for="bar">
+            <input type="checkbox" name="bar" value="" checked="checked">Foo Bar.
+        </label>
     </div>
 
     <!-- This structure must be used for an invalid field (e.g. validation error, empty, ...) -->
