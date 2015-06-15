@@ -73,6 +73,14 @@ After including the form-components mixin, one must use the following HTML/CSS s
 </form>
 ```
 
+### Font Museo Sans
+
+Museo Sans is the company font of konoma. This SCSS can only be used in combination with Rails, as it depends on the font-url function.
+
+### Buttons
+
+The button mixins styles a button to look like a konoma button. One can use the class 'button--disabled' if the button is disabled.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
