@@ -79,7 +79,7 @@ Museo Sans is the company font of konoma. This SCSS can only be used in combinat
 
 ### Buttons
 
-The button mixins styles a button to look like a konoma button. One can use the class 'button--disabled' if the button is disabled.
+The button mixins styles a button to look like a konoma button. One can use the class `button--disabled` if the button is disabled.
 
 ## Development
 
