@@ -1,8 +1,6 @@
-# Konoma::Base::Web
+# konoma-base-web
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/konoma/base/web`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Base utilities (JavaScript and SCSS).
 
 ## Installation
 
@@ -21,6 +19,33 @@ Or install it yourself as:
     $ gem install konoma-base-web
 
 ## Usage
+
+### Form Components
+
+To use the form components, one must use the form mixins, which are available within the _form.scss. Each mixin takes an amount of parameters, which are self describing, based
+on the parameter name.
+
+After including the form-components mixin, one must use the following HTML/CSS structure:
+
+```html
+<form>
+    <div class="form__group">
+        <div><label for="foo">foo</label></div>
+        <div><input type="text" name="foo></div>
+    </div>
+
+    <div class="form__group form__group--small-bottom-margin">
+        <div><input type="text"></div>
+    </div>
+
+    <div>
+        <%= link_to t('common.actions.cancel'), @event.id ? event_path(@event) : events_path, class: 'button button--cancel' %>
+        <input type="submit" class="button button--save">
+        <%= f.submit t('common.actions.save'), class: 'button button--save' %>
+    </div>
+</form>
+```
+
 
 TODO: Write usage instructions here
 
