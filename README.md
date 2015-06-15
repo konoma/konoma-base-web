@@ -35,8 +35,8 @@ After including the form-components mixin, one must use the following HTML/CSS s
 ```html
 <form>
     <div class="form__group">
-        <div><label for="foo">foo</label></div>
-        <div><input type="text" name="foo"></div>
+        <div><label>foo</label></div>
+        <div><input type="text"></div>
     </div>
 
     <!-- The small-bottom-margin class must be used, if there is no label between the previous input and this one -->
@@ -46,8 +46,8 @@ After including the form-components mixin, one must use the following HTML/CSS s
 
     <!-- Use the following construct for checkboxes -->
     <div class="form__group">
-        <label class="label--checkbox" for="bar">
-            <input type="checkbox" name="bar" value="" checked="checked">Foo Bar.
+        <label class="label--checkbox">
+            <input type="checkbox" checked="checked">Foo Bar.
         </label>
     </div>
 
@@ -55,13 +55,13 @@ After including the form-components mixin, one must use the following HTML/CSS s
     <div class="form__group">
         <div>
             <div class="form__group--error">
-                <label for="foobar">Foo Bar</label>
+                <label>Foo Bar</label>
             </div>
         </div>
         <div>
             <div class="form__group--error">
-                <input type="text" name="foobar">
-                <div class="form__error__message">Please fill in</div>
+                <input type="text">
+                <div class="form__error__message">Please fill in.</div>
             </div>
         </div>
     </div>
