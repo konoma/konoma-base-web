@@ -49,6 +49,17 @@ After including the form-components mixin, one must use the following HTML/CSS s
         <label class="label--checkbox" for="bar"><input type="checkbox" name="bar" value="" checked="checked"> Foo Bar.</label>
     </div>
 
+    <!-- This structure must be used for an invalid field (e.g. validation error, empty, ...) -->
+    <div class="form__group">
+        <div><div class="form__group--error"><label for="foobar">Foo Bar</label></div></div>
+        <div>
+            <div class="form__group--error">
+                <input type="text" name="foobar">
+                <div class="form__error__message">Please fill in</div>
+            </div>
+        </div>
+    </div>
+
     <!-- To use the button classes, one must include the _button.scss -->
     <div>
         <input type="submit" value="Save" class="button button--save">
