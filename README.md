@@ -51,7 +51,11 @@ After including the form-components mixin, one must use the following HTML/CSS s
 
     <!-- This structure must be used for an invalid field (e.g. validation error, empty, ...) -->
     <div class="form__group">
-        <div><div class="form__group--error"><label for="foobar">Foo Bar</label></div></div>
+        <div>
+            <div class="form__group--error">
+                <label for="foobar">Foo Bar</label>
+            </div>
+        </div>
         <div>
             <div class="form__group--error">
                 <input type="text" name="foobar">
