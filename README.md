@@ -34,7 +34,7 @@ After including the form-components mixin, one must use the following HTML/CSS s
         <div><input type="text" name="foo"></div>
     </div>
 
-    <!-- The form__group--small-bottom-margin can be used, if there is no label between the previous input and this one -->
+    <!-- The small-bottom-margin class must be used, if there is no label between the previous input and this one -->
     <div class="form__group form__group--small-bottom-margin">
         <div><input type="text"></div>
     </div>
