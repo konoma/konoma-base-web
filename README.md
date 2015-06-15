@@ -31,23 +31,25 @@ After including the form-components mixin, one must use the following HTML/CSS s
 <form>
     <div class="form__group">
         <div><label for="foo">foo</label></div>
-        <div><input type="text" name="foo></div>
+        <div><input type="text" name="foo"></div>
     </div>
 
+    <!-- The form__group--small-bottom-margin can be used, if there is no label between the previous input and this one -->
     <div class="form__group form__group--small-bottom-margin">
         <div><input type="text"></div>
     </div>
 
+    <!-- Use the following construct for checkboxes -->
+    <div class="form__group">
+        <label class="label--checkbox" for="bar"><input type="checkbox" name="bar" value="" checked="checked"> Foo Bar.</label>
+    </div>
+
+    <!-- To use the button classes, one must include the _button.scss -->
     <div>
-        <%= link_to t('common.actions.cancel'), @event.id ? event_path(@event) : events_path, class: 'button button--cancel' %>
-        <input type="submit" class="button button--save">
-        <%= f.submit t('common.actions.save'), class: 'button button--save' %>
+        <input type="submit" value="Save" class="button button--save">
     </div>
 </form>
 ```
-
-
-TODO: Write usage instructions here
 
 ## Development
 
@@ -57,7 +59,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/konoma-base-web/fork )
+1. Fork it ( https://github.com/konoma/konoma-base-web/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
