@@ -73,6 +73,16 @@ After including the form-components mixin, one must use the following HTML/CSS s
 </form>
 ```
 
+When using this gem within a Rails application, it modifies the ActionView::Base.field_error_proc to include the error handlers. This means, that any Rails application, using the form helpers
+have automatic support for the above form__group--error stuff.
+
+```ruby
+<%= form_for @person do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+<% end %>
+```
+
 ### Font Museo Sans
 
 Museo Sans is the company font of konoma. This SCSS can only be used in combination with Rails, as it depends on the font-url function.
