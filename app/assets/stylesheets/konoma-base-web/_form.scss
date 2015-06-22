@@ -9,7 +9,7 @@
 	transition: border-color .2s linear, background-color .2s linear;
 }
 
-@mixin form-components($font-color, $font-family, $label-font-color, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $checkbox-checked-url, $checkbox-unchecked-url, $drop-down-url) {
+@mixin form-components($font-color, $font-family, $label-font-color, $label-font-size, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $checkbox-checked-url, $checkbox-unchecked-url, $checkbox-label-padding-top, $drop-down-url) {
 	label {
 		display: block;
 
@@ -18,12 +18,8 @@
 		line-height: 1;
 
 		color: $label-font-color;
+		font-size: $label-font-size;
 		font-weight: $label-font-weight;
-	}
-
-	.label--checkbox {
-		display: flex;
-		align-items: center;
 	}
 
 	input,
@@ -83,22 +79,20 @@
 	}
 
 	input[type=checkbox] {
-		width: 30px;
-		height: 30px;
-		margin-right: 10px;
+		display: none;
 
-		border: 0;
+		& + label {
+			min-height: 30px;
+			padding-left: 40px;
+			padding-top: $checkbox-label-padding-top;
 
-		background: $checkbox-unchecked-url no-repeat;
-		background-size: 30px 30px;
-
-		&:checked {
-			background: $checkbox-checked-url no-repeat;
+			background: $checkbox-unchecked-url no-repeat;
 			background-size: 30px 30px;
 		}
 
-		&:focus {
-			border: 0 !important;
+		&:checked + label {
+			background: $checkbox-checked-url no-repeat;
+			background-size: 30px 30px;
 		}
 	}
 
