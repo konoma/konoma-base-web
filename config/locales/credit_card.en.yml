@@ -1,0 +1,16 @@
+en:
+  credit_card:
+    credit_card_number:
+      placeholder: "Number"
+      label: "Number"
+    credit_card_cvc:
+      placeholder: "CVC"
+      label: "CVC"
+    credit_card_expiration_month:
+      placeholder: "MM"
+    credit_card_expiration_year:
+      placeholder: "YYYY"
+    add:
+      action_add_credit_card: "Add credit card"
+    credit_card_valid_thru:
+      label: "Valid Thru"

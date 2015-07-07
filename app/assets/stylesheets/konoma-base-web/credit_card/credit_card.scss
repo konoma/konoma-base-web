@@ -1,0 +1,131 @@
+$card-background-color: #ffffff;
+$card-text-color: #000000;
+
+$card-label-text-color: $card-text-color;
+$card-label-error-text-color: #EB4657;
+
+$card-input-background-color: #ffffff;
+$card-input-error-text-color: #ffffff;
+$card-input-error-background-color: rgba(235, 70, 87, .7);
+
+$card-type-visa-border-color: #3b4a97;
+$card-type-amex-border-color: #23ade3;
+$card-type-mastercard-border-color: #ff9900;
+
+//noinspection ALL
+.credit__card {
+	width: 350px;
+	height: 200px;
+	padding: 85px 35px 15px;
+	margin: 15px 0 35px;
+
+	background-color: $card-background-color;
+
+	background-position: top 15px right 15px, center center;
+	background-repeat: no-repeat;
+	background-size: 50px 50px, cover;
+
+	border-radius: 4px;
+	border: 1px solid $card-text-color;
+
+	color: $card-text-color;
+	font-size: 2.4rem;
+	letter-spacing: 2px;
+
+	user-select: none;
+}
+
+//noinspection ALL
+.credit__card--amex {
+	background-image: asset_url('credit_card/american_express_logo.png'), asset_url('credit_card/credit_card_background.png');
+
+	border-color: $card-type-amex-border-color;
+}
+
+//noinspection ALL
+.credit__card--visa {
+	background-image: asset_url('credit_card/visa_logo.png'), asset_url('credit_card/credit_card_background.png');
+
+	border-color: $card-type-visa-border-color;
+}
+
+//noinspection ALL
+.credit__card--mastercard {
+	background-image: asset_url('credit_card/master_card_logo.png'), asset_url('credit_card/credit_card_background.png');
+
+	border-color: $card-type-mastercard-border-color;
+}
+
+.card__info {
+	margin-top: 20px;
+}
+
+.card__info--split {
+	.card__info--expiry {
+		width: 145px;
+		float: left;
+	}
+
+	.card__info--cvc {
+		width: 65px;
+		float: right;
+	}
+}
+
+.card__label {
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+.card__expiry {
+	font-size: 1.8rem;
+}
+
+.credit__card--form {
+	padding-top: 55px;
+	height: 240px;
+
+	label {
+		margin-bottom: 8px;
+
+		color: $card-label-text-color;
+	}
+
+	input {
+		padding: 10px;
+
+		background-color: $card-input-background-color;
+
+		border-width: 1px;
+
+		&:focus {
+			border-width: 1px;
+		}
+	}
+
+	.form__group--error {
+		label {
+			color: $card-label-error-text-color;
+		}
+
+		input {
+			color: $card-input-error-text-color;
+			background-color: $card-input-error-background-color;
+		}
+	}
+
+	.card__info {
+		margin-top: 16px;
+	}
+
+	.card__expiry {
+		.card__expiry__month {
+			width: 55px;
+		}
+
+		.card__expiry__year {
+			width: 65px;
+		}
+	}
+}
