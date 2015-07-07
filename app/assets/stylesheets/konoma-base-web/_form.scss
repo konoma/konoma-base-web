@@ -12,6 +12,7 @@
 @mixin form-components($font-color, $font-family, $label-font-color, $label-font-size, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $input-field-border-size, $input-field-focus-border-size, $radio-checked-url, $radio-unchecked-url, $checkbox-checked-url, $checkbox-unchecked-url, $checkbox-label-padding-top, $drop-down-url) {
 	$input-field-top-padding: 12px;
 	$input-field-side-padding: 16px;
+	$padding-delta: $input-field-focus-border-size - $input-field-border-size;
 
 	label {
 		display: block;
@@ -49,8 +50,6 @@
 		}
 
 		&:focus {
-			$padding-delta: $input-field-focus-border-size - $input-field-border-size;
-
 			padding: ($input-field-top-padding - $padding-delta) ($input-field-side-padding - $padding-delta);
 
 			@include input-field-focus($input-field-focus-background-color, $input-field-focus-border-color, $input-field-focus-border-size);
@@ -168,6 +167,8 @@
 		-moz-appearance: none;
 
 		&:focus {
+			padding: ($select-input-field-top-bottom-padding - $padding-delta) ($select-input-field-right-padding - $padding-delta) ($select-input-field-top-bottom-padding - $padding-delta) ($input-field-side-padding - $padding-delta);
+
 			@include input-field-focus($input-field-focus-background-color, $input-field-focus-border-color, $input-field-focus-border-size);
 		}
 
