@@ -9,9 +9,7 @@
 	transition: border-color .2s linear, background-color .2s linear;
 }
 
-@mixin form-components($font-color, $font-family, $label-font-color, $label-font-size, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $radio-checked-url, $radio-unchecked-url, $checkbox-checked-url, $checkbox-unchecked-url, $checkbox-label-padding-top, $drop-down-url) {
-	$input-field-border-size: 1px;
-	$input-field-focus-border-size: 2px;
+@mixin form-components($font-color, $font-family, $label-font-color, $label-font-size, $label-font-weight, $input-field-font-weight, $input-field-font-size, $input-field-placeholder-font-color, $input-field-placeholder-font-weight, $input-field-background-color, $input-field-disabled-background-color, $input-field-focus-background-color, $input-field-file-background-color, $input-field-disabled-font-color, $input-field-border-color, $input-field-focus-border-color, $input-field-error-border-color, $input-field-border-radius, $input-field-border-size, $input-field-focus-border-size, $radio-checked-url, $radio-unchecked-url, $checkbox-checked-url, $checkbox-unchecked-url, $checkbox-label-padding-top, $drop-down-url) {
 	$input-field-top-padding: 12px;
 	$input-field-side-padding: 16px;
 
