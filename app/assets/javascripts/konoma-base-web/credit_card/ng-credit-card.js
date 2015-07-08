@@ -5,7 +5,7 @@ angular.module('konomaBaseWeb', []).directive("ngCreditCard", [function () {
 		'<div class="credit__card">' +
 		'   <div class="card__number card__field__container">' +
 		'       <label class="card__label">{{ cardNumberLabel }}</label>' +
-		'       <div><input class="card__number__number" type="text" placeholder="{{ cardNumberPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="number"></div>' +
+		'       <div><input class="card__number__number" type="text" placeholder="{{ cardNumberPlaceholder }}" autocomplete="off" pattern="[0-9 ]*" data-stripe="number"></div>' +
 		'   </div>' +
 		'   <div class="card__info card__info--split">' +
 		'       <div class="card__info--expiry card__field__container">' +
