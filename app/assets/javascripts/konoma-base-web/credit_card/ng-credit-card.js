@@ -2,7 +2,7 @@ angular.module('konomaBaseWeb', []).directive("ngCreditCard", [function () {
 	return {
 		restrict: 'A',
 		template: '' +
-		'<div class="credit__card credit__card--form">' +
+		'<div class="credit__card">' +
 		'   <div class="card__number card__field__container">' +
 		'       <label class="card__label">{{ cardNumberLabel }}</label>' +
 		'       <div><input class="card__number__number" type="text" placeholder="{{ cardNumberPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="number"></div>' +
