@@ -5,19 +5,19 @@ angular.module('konomaBaseWeb', []).directive("ngCreditCard", [function () {
 		'<div class="credit__card credit__card--form">' +
 		'   <div class="card__number card__field__container">' +
 		'       <label class="card__label">{{ cardNumberLabel }}</label>' +
-		'       <div><input class="card__number__number" type="text" placeholder="{{ cardNumberPlaceholder }}" autocomplete="off" data-stripe="number"></div>' +
+		'       <div><input class="card__number__number" type="text" placeholder="{{ cardNumberPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="number"></div>' +
 		'   </div>' +
 		'   <div class="card__info card__info--split">' +
 		'       <div class="card__info--expiry card__field__container">' +
 		'           <label class="card__label">{{ cardExpiryLabel }}</label>' +
 		'           <div class="card__expiry">' +
-		'               <input class="card__expiry__month" maxlength="2" type="text" placeholder="{{ cardMonthPlaceholder }}" autocomplete="off" data-stripe="exp-month"> /' +
-		'               <input class="card__expiry__year" maxlength="4" type="text" placeholder="{{ cardYearPlaceholder }}" autocomplete="off" data-stripe="exp-year">' +
+		'               <input class="card__expiry__month" maxlength="2" type="text" placeholder="{{ cardMonthPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="exp-month"> /' +
+		'               <input class="card__expiry__year" maxlength="4" type="text" placeholder="{{ cardYearPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="exp-year">' +
 		'           </div>' +
 		'       </div>' +
 		'       <div class="card__info--cvc card__field__container">' +
 		'           <label class="card__label">{{ cardCvcLabel }}</label>' +
-		'		    <div class="card__cvc"><input class="card__cvc__cvc" type="text" placeholder="{{ cardCvcPlaceholder }}" autocomplete="off" data-stripe="cvc"></div>' +
+		'		    <div class="card__cvc"><input class="card__cvc__cvc" type="text" placeholder="{{ cardCvcPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="cvc"></div>' +
 		'       </div>' +
 		'   </div>' +
 		'</div>',
