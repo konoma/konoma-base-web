@@ -17,9 +17,10 @@ $border-focus-size: 2px;
 
 //noinspection ALL
 .credit__card {
-	width: 370px;
-	height: 240px;
-	padding: 65px 35px 15px;
+	width: 100%;
+	max-width: 370px;
+	height: 340px;
+	padding: 65px 15px 15px;
 	margin: 15px 0 35px;
 
 	background-color: $card-background-color;
@@ -36,60 +37,7 @@ $border-focus-size: 2px;
 	letter-spacing: 2px;
 
 	user-select: none;
-}
 
-//noinspection ALL
-.credit__card--amex {
-	background-image: asset_url('credit_card/cc_logo_amex.png'), asset_url('credit_card/cc_bg_amex.png');
-
-	border-color: $card-type-amex-border-color;
-}
-
-//noinspection ALL
-.credit__card--visa {
-	background-image: asset_url('credit_card/cc_logo_visa.png'), asset_url('credit_card/cc_bg_visa.png');
-
-	border-color: $card-type-visa-border-color;
-}
-
-//noinspection ALL
-.credit__card--mastercard {
-	background-image: asset_url('credit_card/cc_logo_mastercard.png'), asset_url('credit_card/cc_bg_mastercard.png');
-
-	border-color: $card-type-mastercard-border-color;
-}
-
-.card__info {
-	margin-top: 20px;
-}
-
-.card__info--split {
-	input {
-		text-align: center;
-	}
-
-	.card__info--expiry {
-		width: 162px;
-		float: left;
-	}
-
-	.card__info--cvc {
-		width: 75px;
-		float: right;
-	}
-}
-
-.card__label {
-	font-size: 1.3rem;
-	font-weight: 700;
-	letter-spacing: 0;
-}
-
-.card__expiry {
-	font-size: 1.8rem;
-}
-
-.credit__card--form {
 	label {
 		margin-bottom: 8px;
 
@@ -127,7 +75,78 @@ $border-focus-size: 2px;
 		}
 
 		.card__expiry__year {
-			width: 75px;
+			width: 78px;
 		}
+	}
+}
+
+//noinspection ALL
+.credit__card--amex {
+	background-image: asset_url('credit_card/cc_logo_amex.png'), asset_url('credit_card/cc_bg_amex.png');
+
+	border-color: $card-type-amex-border-color;
+}
+
+//noinspection ALL
+.credit__card--visa {
+	background-image: asset_url('credit_card/cc_logo_visa.png'), asset_url('credit_card/cc_bg_visa.png');
+
+	border-color: $card-type-visa-border-color;
+}
+
+//noinspection ALL
+.credit__card--mastercard {
+	background-image: asset_url('credit_card/cc_logo_mastercard.png'), asset_url('credit_card/cc_bg_mastercard.png');
+
+	border-color: $card-type-mastercard-border-color;
+}
+
+.card__info {
+	margin-top: 20px;
+}
+
+.card__info--split {
+	input {
+		text-align: center;
+	}
+
+	.card__info--cvc {
+		margin-top: 16px;
+	}
+}
+
+.card__label {
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+
+.card__expiry {
+	font-size: 1.8rem;
+}
+
+@media screen and (min-width: 375px) {
+	.credit__card {
+		height: 255px;
+	}
+
+	.card__info--split {
+		.card__info--expiry {
+			float: left;
+			width: 165px;
+		}
+
+		.card__info--cvc {
+			float: right;
+
+			width: 75px;
+			margin-top: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.credit__card {
+		padding: 65px 35px 15px;
 	}
 }
