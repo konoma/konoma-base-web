@@ -15,18 +15,6 @@ $card-type-mastercard-border-color: #ff9900;
 $border-size: 1px;
 $border-focus-size: 2px;
 
-//.credit__card {
-//
-//	.card__info--cvc {
-//		margin-top: 15px;
-//
-//		.card__cvc {
-//			width: 100px;
-//		}
-//	}
-//}
-
-
 //noinspection ALL
 .credit__card {
 	width: 100%;
@@ -123,7 +111,7 @@ $border-focus-size: 2px;
 	}
 
 	.card__info--cvc {
-		margin-top: 15px;
+		margin-top: 16px;
 	}
 }
 
@@ -159,7 +147,6 @@ $border-focus-size: 2px;
 
 @media screen and (min-width: 400px) {
 	.credit__card {
-		height: 240px;
 		padding: 65px 35px 15px;
 	}
 }
