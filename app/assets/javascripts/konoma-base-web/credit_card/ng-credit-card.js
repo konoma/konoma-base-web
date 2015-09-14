@@ -11,8 +11,8 @@ angular.module('konomaBaseWeb', []).directive("ngCreditCard", [function () {
 		'       <div class="card__info--expiry card__field__container">' +
 		'           <label class="card__label">{{ cardExpiryLabel }}</label>' +
 		'           <div class="card__expiry">' +
-		'               <input class="card__expiry__month" maxlength="2" type="text" placeholder="{{ cardMonthPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="exp-month"> /' +
-		'               <input class="card__expiry__year" maxlength="4" type="text" placeholder="{{ cardYearPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="exp-year">' +
+		'               <input class="card__expiry__month" maxlength="2" type="text" placeholder="{{ cardMonthPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="{{ stripeCardExpMonth }}"> /' +
+		'               <input class="card__expiry__year" maxlength="4" type="text" placeholder="{{ cardYearPlaceholder }}" autocomplete="off" pattern="\\d*" data-stripe="{{ stripeCardExpYear }}">' +
 		'           </div>' +
 		'       </div>' +
 		'       <div class="card__info--cvc card__field__container">' +
@@ -28,7 +28,9 @@ angular.module('konomaBaseWeb', []).directive("ngCreditCard", [function () {
 			cardMonthPlaceholder: '@',
 			cardYearPlaceholder: '@',
 			cardCvcLabel: '@',
-			cardCvcPlaceholder: '@'
+			cardCvcPlaceholder: '@',
+			stripeCardExpMonth: '@',
+			stripeCardExpYear: '@'
 		},
 		link: function (scope, element) {
 			var handleCardType = function (element, cardType) {
