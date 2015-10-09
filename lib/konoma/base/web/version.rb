@@ -1,7 +1,7 @@
 module Konoma
 	module Base
 		module Web
-			VERSION = '0.1.21'
+			VERSION = '1.0.0'
 		end
 	end
 end
